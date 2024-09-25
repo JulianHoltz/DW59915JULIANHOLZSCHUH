@@ -3,18 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/d9facc8570.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    
+    <title>GoDigital Home Page</title>
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <p>Hola amigos, como estan?</p>
-    <ul>QUE ES ESTO
-        <li>ITEM 1</li>
-        <li>ITEM 2</li>
-        <li>ITEM 3</li>
-        <li>ITEM 4</li>
-        <li>ITEM 5</li>
-    </ul>
+    <header>
+        <div class="headerBox"><a href="index.html"><img id="Logo" src="5 - Logos/GoDigital.png" alt="logoGoDigital"></a></div>
+        
+        <!-- Start Mobil Nav -->
+        <div id="dropdown" class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>    
+                <ul id="myDropdown" class="dropdown-content">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="queHacemos.html">QUE HACEMOS</a></li>
+                    <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="dondeEncontrarnos.html">DONDE ENCONTRARNOS</a></li>
+                </ul>
+        </div>
+
+        <!-- End Mobil Nav -->
+
+        <!-- Start Mobil Nav -->
+        <div class="NavBoxDesktop">    
+                <ul class="NavDesktop">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="queHacemos.html">QUE HACEMOS</a></li>
+                    <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="dondeEncontrarnos.html">DONDE ENCONTRARNOS</a></li>
+                </ul>
+        </div>
+        
+                <!-- End Mobil Nav -->
+</header>
+
+
+
+<main>
+    <div class="mainTitleBox">
+        <h1>¿ESTAS LISTO</h1>
+        <h1>PARA ROMPERLA?</h1>
+        <h2>Hola somos GoDigital</h2>
+        <div class="pBox">  
+            <p>Una Agencia 360 que te acompañará y guiará en cada paso que des. 
+                Desde el Logo y la imagen corporativa, hasta las redes, la pauta online, tu sitio web, tu tienda online y mucho más...!</p>
+        </div>
+    </div>
+
+    <section id="DesktopSection">
+        <div class="Div_Box_Father">
+            <div class="Div_Box_Son">
+                        <div class="Div_Box Div_Box__text">
+                            <div class="Div_Box_divtext__conteiner">
+                                    <div class="Div_Box_divtext"><h2>+75</h2><span><p>Satisfied</p><p>Clients</p></span></div>
+                                    <div class="Div_Box_divtext"><h2>+230</h2><span><p>Successful</p><p>Projects</p></span></div>
+                            </div>
+                            <div class="Div_Box_divtext__conteiner">
+                                    <div class="Div_Box_divtext"><h2>+5</h2><span><p>Annual</p><p>Growth</p></span></div>
+                                    <div class="Div_Box_divtext"><h2>+8</h2><span><p>New</p><p>Accounts</p></span></div>
+                            </div>
+                        </div>
+                        <div class="Div_Box" id="divBox2"></div>
+                        <div class="Div_Box">
+                            <div class="Div_Box__Hollow">
+                                <h2>DATA ANALYSIS</h2>
+                                <img id="divBox3" src="6-img/mb3.png">
+                            </div>
+                        </div>
+            </div>
+            <div class="Div_Box_Son">
+                        <div class="Div_Box Div_Box__Hollow" id="divBox4"><div id="divBox4IMG"></div></div>
+                        <div class="Div_Box" id="divBox5"><h2 id="divBox5h2I">SOCIAL</h2><h2 id="divBox5h2D">MEDIA</h2></div>
+                        <div class="Div_Box Div_Box__text" id="divBox6"><button>Contactanos</button><img src="6-img/arrow.png" id="ImgBox6"></div>
+                        <div class="Div_Box" id="divBox7"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <img src="" alt="">
+
+
+    <!-- Start Slider imagenes -->
+     <section id="ResponsiveSection">
+        <div class="slider">
+            <div class="slides">
+              <div class="slide active">
+                <img src="6-img/Slider/01.jpg" alt="Imagen 1">
+              </div>
+              <div class="slide">
+                <img src="6-img/Slider/02.jpg" alt="Imagen 2">
+              </div>
+              <div class="slide">
+                <img src="6-img/Slider/03.jpg" alt="Imagen 3">
+              </div>
+              <div class="slide">
+                <img src="6-img/Slider/04.jpg" alt="Imagen 4">
+              </div>
+              <div class="slide">
+                <img src="6-img/Slider/05.jpg" alt="Imagen 5">
+              </div>
+              <div class="slide">
+                <img src="6-img/Slider/06.jpg" alt="Imagen 6">
+              </div>
+              <div class="slide">
+                <img src="6-img/Slider/07.jpg" alt="Imagen 7">
+              </div>
+            </div>
+            <div class="dots">
+              <span class="dot active" onclick="currentSlide(0)"></span>
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+          </div>
+          <script src="Slider.js"></script>
+
+     </section>
+     <!-- End Slider imagenes -->
+
+    <article>
+        <div class="buttonBox">
+            <a href="3-contacto/contacto.html">Contactanos!</a>
+        </div>
+    </article>
+
+</main>
+
+<footer>
+    <div id="footerGrid">
+        <img src="5 - Logos/GoDigital.png" alt="Logo GoDigital">
+        <p>All rights reserved</p>
+    
+        <div class="buttonBox Div1">
+            <i class="FaIcons fa-brands fa-whatsapp"></i><a class="contactInfo">+549112251.4574</a>
+        </div>
+        <div class="buttonBox Div2">
+            <i class="FaIcons fa-solid fa-envelope"></i></i><a class="contactInfo" href="">hello.godigitalmkt@gmail.com</a>
+        </div>
+        <div class="buttonBox Div3">
+            <i class="FaIcons fa-brands fa-instagram"></i><a class="contactInfo" href="">go.digital.mkt</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
