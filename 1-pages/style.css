@@ -166,6 +166,7 @@ h2{font-size: var(--subTitle);}
 
 .form__background{
     height: 120%;
+    min-height: 60vh;
     width: 40%;
     border-radius: var(--radius);
     background-image: linear-gradient(120deg, var(--hellkBackground), var(--darkBackground));
@@ -181,8 +182,9 @@ h2{font-size: var(--subTitle);}
 form{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 80%;
-
+    height: 80%;
 }
 
 input{
@@ -191,12 +193,26 @@ input{
     padding-top: 3%;
     border-radius: 5px;
 }
+
+label{color: var(--black); font-weight: 900;}
+
+::placeholder {
+  color: var(--darkBackground);
+  opacity: 0.8;
+}
+
+#form__submitbtn{width: 100%;max-height: 15%;}
+
+input[type=submit]{color: var(--darkBackground);font-weight: 900;}
+
+input[placeholder]{color: var(--darkBackground);}
 /* ends config Form */
 
 /* start config imgs of subpages */
 .arrow{height: var(--arrowheight);}
 .mac{width: 70%;}
 .CEO__img{width: 20%;border-radius: 50%;}
+iframe{height: 50%; width: 70%;min-height: 30VH;filter: grayscale(75%);}
 /* end config imgs of subpages */
 
 /* Start BUTTON STYLE */
@@ -217,6 +233,10 @@ article{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.buttonBox--gray{
+  background-image: linear-gradient(to right, var(--hellGray) , var(--darkGray));
 }
 
 a{
@@ -290,9 +310,10 @@ footer{
   .NavBoxDesktop{display: none;}
   #dropdown{display: block;}
 
-  .form__box{flex-direction: column;}
+  .form__box{flex-direction: column; margin: 5%; min-height: 70VH;}
   .form__background{width: 80%;position: static;}
   .form__box i{display: none;}
+  .form__box h2{margin: 1%;text-align: center;}
 
   footer{height: 15VH;}
 
