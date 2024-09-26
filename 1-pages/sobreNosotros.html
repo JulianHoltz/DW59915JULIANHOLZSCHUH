@@ -9,65 +9,75 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
     
     <title>GoDigital Home Page</title>
 </head>
 <body>
     <header>
-        <div class="headerBox"><a href="index.html"><img id="Logo" src="5 - Logos/GoDigital.png" alt="logoGoDigital"></a></div>
+        <div class="headerBox"><a href="../index.html"><img id="Logo" src="../5 - Logos/GoDigital.png" alt="logoGoDigital"></a></div>
         
         <!-- Start Mobil Nav -->
-        <div id="dropdown" class="dropdown">
+        <nav id="dropdown" class="dropdown">
             <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>    
                 <ul id="myDropdown" class="dropdown-content">
-                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="../index.html">INICIO</a></li>
                     <li><a href="queHacemos.html">QUE HACEMOS</a></li>
                     <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="dondeEncontrarnos.html">DONDE ENCONTRARNOS</a></li>
                 </ul>
-        </div>
+        </nav>
 
         <!-- End Mobil Nav -->
 
         <!-- Start Mobil Nav -->
-        <div class="NavBoxDesktop">    
+        <nav class="NavBoxDesktop">    
                 <ul class="NavDesktop">
-                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="../index.html">INICIO</a></li>
                     <li><a href="queHacemos.html">QUE HACEMOS</a></li>
                     <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="dondeEncontrarnos.html">DONDE ENCONTRARNOS</a></li>
                 </ul>
-        </div>
+        </nav>
         
                 <!-- End Mobil Nav -->
 </header>
 
 <main>
+    <section>
     <h1>SOBRE NOSOTROS</h1>
-    <img src="" alt="CEO">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, quasi ipsam. Tempore excepturi accusamus officiis, reiciendis omnis magni, fuga deserunt voluptas natus fugiat corrupti. Perspiciatis vel nihil rem incidunt expedita.</p>
+    </section>
 
+    <section>
+    <img class="CEO__img" src="../6-img/CEO.jpeg" alt="CEO">
+    <h2>CEO Julieta M. G.</h2>
+    </section>
 
-    <!-- Slider imagenes -->
-    <img src="" alt="slider1">
-    <img src="" alt="slider2">
-    <img src="" alt="slider3">
+    <section>
+    <div class="box__p">
+    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, quasi ipsam. Tempore excepturi accusamus officiis, reiciendis omnis magni, fuga deserunt voluptas natus fugiat corrupti. Perspiciatis vel nihil rem incidunt expedita."</p>
+    </div>
+    </section>
 
 
 </main>
 
 <footer>
-    <div class="buttonBox">
-        <i class="fa-brands fa-whatsapp"></i><a class="contactInfo">+549112251.4574</a>
-    </div>
-    <div class="buttonBox">
-        <i class="fa-solid fa-envelope"></i></i><a class="contactInfo" href="">hello.godigitalmkt@gmail.com</a>
-    </div>
-    <div class="buttonBox">
-        <i class="fa-brands fa-instagram"></i><a class="contactInfo" href="">go.digital.mkt</a>
+    <div id="footerGrid">
+        <img class="footer__img" src="../5 - Logos/GoDigital.png" alt="Logo GoDigital">
+        <p class="footer__p">All rights reserved</p>
+    
+        <div class="buttonBox Div1">
+            <i class="FaIcons fa-brands fa-whatsapp"></i><a class="contactInfo">+549112251.4574</a>
+        </div>
+        <div class="buttonBox Div2">
+            <i class="FaIcons fa-solid fa-envelope"></i></i><a class="contactInfo" href="">hello.godigitalmkt@gmail.com</a>
+        </div>
+        <div class="buttonBox Div3">
+            <i class="FaIcons fa-brands fa-instagram"></i><a class="contactInfo" href="">go.digital.mkt</a>
+        </div>
     </div>
 </footer>
 

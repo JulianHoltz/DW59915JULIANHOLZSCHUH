@@ -1,0 +1,42 @@
+*{margin: 0;padding: 0;font-family:fantasy; letter-spacing: 1px;} 
+
+
+:root{
+    --darkBackground: #000000;
+    --hellkBackground: #fd066d;
+    --fontColor:rgb(255, 232, 31);
+    
+    --H1:10VH;
+    --H2:5VH;
+    --H3:4VH;
+    --H4:3VH;
+    --p:3VH;
+    --ol:3VH;
+    --li:3VH;
+
+
+}
+
+body{background-image: url(galaxy.jpeg);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;}
+
+h1{color: var(--fontColor); font-size:var(--H1);}
+
+h2{color: var(--fontColor); font-size:var(--H2);margin-bottom: 10%;}
+
+h3{color: var(--fontColor);font-size:var(--H3);}
+
+h4{color: var(--fontColor);font-size:var(--H4);}
+
+p{color: var(--fontColor); font-size:var(--p);}
+
+ol{color: var(--fontColor); font-size:var(--ol);}
+
+li{color: var(--fontColor); padding: 1%;font-size:var(--li);}
+
+section{display: flex;justify-content: space-around;align-items: flex-start;margin-top: 1%;}
+
+article{width: 45%; color: var(--fontColor);font-size:var(--li);}

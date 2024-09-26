@@ -12,6 +12,7 @@
     --radius:7VH;
     --title:7VH;
     --subTitle:5VH;
+    --arrowheight:30VH
 }
 
 /* END general config. */
@@ -115,245 +116,88 @@
 
   /* End  Header & Nav*/
 
-/* start SECTION only Web */
-
-#DesktopSection{width: 100VW;height: 40%;}
-
-.Div_Box_Father{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 100VW;
-
-}
-
-.Div_Box_Son{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100VW;
-}
-
-.Div_Box{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 25VH;
-	width: 30VW;
-	margin: 1%;
-	border-radius: var(--radius);
-	background-image: linear-gradient(120deg, var(--hellkBackground), var(--darkBackground));
-	padding: 4px;
-}
-
-/*Color de los textos en el primer box*/
-.Div_Box__text{
-	color: var(--white);
-	display: flex;
-}
-
-.Div_Box_divtext__conteiner{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 45%;
-}
-
-.Div_Box_divtext{
-	display: flex;
-	align-items: center;
-	justify-content: left;
-	width: auto;
-	color: var(--white);
-}
-
-.Div_Box_divtext p {font-size: 1em; margin: 10%;}
-.Div_Box_divtext h3 { font-size: 2em;}
 
 
-
-
-#divBox2{
-	background-image: url("6-img/1d.jpg");
-	background-size: cover;
-}
-
-#divBox3{
-	width: 80%;
-	height: auto;
-}
-
-#divBox4{
-	height: 25VH;
-	width: 30VW;
-	border-radius: 0px var(--radius) var(--radius) 0px;
-	border: 4px solid var(--darkBackground);
-	border-left: none;
-
-}
-
-#divBox4IMG{
-	background-image: url("6-img/mb4.png");
-	background-size: cover;
-	height: 90%;
-	width: 90%;
-	background-position: right;
-}
-
-#divBox5{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background: none;
-	border: 4px solid var(--darkBackground);
-}
-
-#divBox5h3I{
-	font-size: var(--title);
-	margin: 0px 10% 0px 0px;
-}
-
-#divBox5h3D{
-	font-size: var(--title);
-	margin: 0px 0px 0px 10%;
-}
-
-
-#ImgBox6{
-	filter: invert(100%); 
-  min-height: 70%;
-  max-width: 20%;
-}
-
-#divBox6 Button{
-	font-size: 6VH;
-	font-weight: 600;
-}
-
-#divBox7{
-	background-image: url("6-img/smiley-woman\ \(2\).jpg");
-	background-size: cover;
-	border-radius: var(--radius) 0px 0px var(--radius);
-	width: 15VW;
-  background-position: 60% 50%;
-}
-
-
-.Div_Box__Hollow{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background: white;
-	border-radius: var(--radius);
-	width: 100%;
-	height: 100%;
-}
-
-
-button{
-	font-size: var(--subTitle);
-	color: #e1dfe2;
-	font-weight: 900;
-	background: none;
-	border: none;
-	margin: none;
-	padding: none;
-}
-
-#divBox6:hover{
-	opacity: 0.9;
-}
-
-/* End SECTION only Web */
-
-
+/* Start main section */
 main{ 
     width: 100vw;
-    height: 200VH; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;}
+    justify-content: space-evenly;
+    min-height: 70VH;
+}
 
-.mainTitleBox{
-    height: 30Vh;
-    width: 100vw;
+section{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.pBox{height: 40%;width: 60VW;margin: 1%;}
+h1{font-size: var(--title);}
+h2{font-size: var(--subTitle);}
+.box__p{width: 40%; margin: 2%;}
 
-
-/* Start Slider Section (ResponsiveSection) */
-#ResponsiveSection{
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-  width: 100VW;
-  background-color: var(--white);
+/* start config Form */
+.form__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+    height: 60VH;
+    width: 90vw;
+    border-radius: var(--radius);
+    margin: 10VH;
 }
 
-.slider {
-  width: 95%;
-  height: 80%;
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.form__box h2{
+    color: var(--white);
+    font-size: var(--title);
+    margin: 10%;
 }
 
-.slides {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
+.form__box i{
+    color: var(--white);
+    font-size: var(--title);
 }
 
-.slide {
-  width: 100%;
-  flex-shrink: 0;
+.form__background{
+    height: 120%;
+    width: 40%;
+    border-radius: var(--radius);
+    background-image: linear-gradient(120deg, var(--hellkBackground), var(--darkBackground));
+    position: relative;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
 }
 
-.dots {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
+input{
+    width: 100%;
+    margin-top: 3%;
+    padding-top: 3%;
+    border-radius: 5px;
 }
+/* ends config Form */
 
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 5px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.dot.active {
-  background-color: #fff;
-}
-/* End Slider Section (ResponsiveSection) */
-
-
+/* start config imgs of subpages */
+.arrow{height: var(--arrowheight);}
+.mac{width: 70%;}
+.CEO__img{width: 20%;border-radius: 50%;}
+/* end config imgs of subpages */
 
 /* Start BUTTON STYLE */
 article{
@@ -361,7 +205,7 @@ article{
   height: 10%;
   display: flex;
   align-items: top;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .buttonBox{
@@ -425,6 +269,13 @@ footer{
 /* End Footer */
 
 @media only screen and (max-width: 630px){
+    :root{
+        --title:4VH;
+        --subTitle:2.5VH;
+        --arrowheight:12.5VH
+    }
+
+
   .contactInfo{
     display: none;
   }
@@ -432,12 +283,18 @@ footer{
     display: none;
   }
 
-  main{height: 80vh;}
-
   #ResponsiveSection{
     height: 50%;
   }
 
   .NavBoxDesktop{display: none;}
   #dropdown{display: block;}
+
+  .form__box{flex-direction: column;}
+  .form__background{width: 80%;position: static;}
+  .form__box i{display: none;}
+
+  footer{height: 15VH;}
+
+
 }

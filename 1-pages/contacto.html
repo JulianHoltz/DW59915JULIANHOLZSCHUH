@@ -15,52 +15,77 @@
 </head>
 <body>
     <header>
-        <div class="headerBox"><a href="index.html"><img id="Logo" src="5 - Logos/GoDigital.png" alt="logoGoDigital"></a></div>
+        <div class="headerBox"><a href="../index.html"><img id="Logo" src="../5 - Logos/GoDigital.png" alt="logoGoDigital"></a></div>
         
         <!-- Start Mobil Nav -->
-        <div id="dropdown" class="dropdown">
+        <nav id="dropdown" class="dropdown">
             <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>    
                 <ul id="myDropdown" class="dropdown-content">
-                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="../index.html">INICIO</a></li>
                     <li><a href="queHacemos.html">QUE HACEMOS</a></li>
                     <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="dondeEncontrarnos.html">DONDE ENCONTRARNOS</a></li>
                 </ul>
-        </div>
+        </nav>
 
         <!-- End Mobil Nav -->
 
         <!-- Start Mobil Nav -->
-        <div class="NavBoxDesktop">    
+        <nav class="NavBoxDesktop">    
                 <ul class="NavDesktop">
-                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="../index.html">INICIO</a></li>
                     <li><a href="queHacemos.html">QUE HACEMOS</a></li>
                     <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="dondeEncontrarnos.html">DONDE ENCONTRARNOS</a></li>
                 </ul>
-        </div>
+        </nav>
         
                 <!-- End Mobil Nav -->
 </header>
 
 <main>
-    <h1>DONDE ENCONTRARNOS</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.749519381774!2d-58.270569824409826!3d-34.71149717291578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e1b20b278c7%3A0x45e4becae8448c5a!2sCarabelas%2086%2C%20B1876%20Bernal%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1724249380497!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section>
+    <h1>CONTACTANOS!</h1>
+    </section>
+
+    <section class="form">
+        <div class="form__box">
+            <div class="form__box__text">
+            <h2>QUERES SABER COMO PODEMOS AYUDARTE?</h2>
+            <i class="fa-solid fa-arrow-right" style="color: #FFFFFF;"></i>
+            </div>
+
+            <div class="form__background">
+                <form action="">
+                    <input type="text">
+                    <input type="mail">
+                    <input type="number">
+                    <input type="textarea">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </section>
 
 
 </main>
 
 <footer>
-    <div class="buttonBox">
-        <i class="fa-brands fa-whatsapp"></i><a class="contactInfo">+549112251.4574</a>
-    </div>
-    <div class="buttonBox">
-        <i class="fa-solid fa-envelope"></i></i><a class="contactInfo" href="">hello.godigitalmkt@gmail.com</a>
-    </div>
-    <div class="buttonBox">
-        <i class="fa-brands fa-instagram"></i><a class="contactInfo" href="">go.digital.mkt</a>
+    <div id="footerGrid">
+        <img class="footer__img" src="../5 - Logos/GoDigital.png" alt="Logo GoDigital">
+        <p class="footer__p">All rights reserved</p>
+    
+        <div class="buttonBox Div1">
+            <i class="FaIcons fa-brands fa-whatsapp"></i><a class="contactInfo">+549112251.4574</a>
+        </div>
+        <div class="buttonBox Div2">
+            <i class="FaIcons fa-solid fa-envelope"></i></i><a class="contactInfo" href="">hello.godigitalmkt@gmail.com</a>
+        </div>
+        <div class="buttonBox Div3">
+            <i class="FaIcons fa-brands fa-instagram"></i><a class="contactInfo" href="">go.digital.mkt</a>
+        </div>
     </div>
 </footer>
 
